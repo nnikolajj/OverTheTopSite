@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1 className={"title"}>Banana Peeler</h1>
+      <h1 className="title">Banana Peeler</h1>
 
       <div>
         Our automatic diesel powered banana peelers are some of the best in the
@@ -36,7 +36,7 @@ function App() {
         <h2>Products</h2>
         <div>
           Large
-          <img src="%PUBLIC_URL%/BananaPeller.jpeg" />
+          <img src="src/images/BananaPeeler.jpeg" />
         </div>
       </div>
     </div>
