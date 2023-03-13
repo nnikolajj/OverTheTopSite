@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+// @ts-ignore
+import bananaPeeler from "../src/images/BananaPeeler.jpeg";
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
         <h2>Products</h2>
         <div>
           Large
-          <img src="src/images/BananaPeeler.jpeg" />
+          <img src={bananaPeeler} alt="large industrial banana peeling machine" />
         </div>
       </div>
     </div>
