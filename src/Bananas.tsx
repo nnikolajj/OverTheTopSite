@@ -5,7 +5,7 @@ export const Bananas: React.FC<{ randomState: Random }> = ({ randomState }) => {
 
   return (
     <div>
-      {Array(50)
+      {Array(10)
         .fill(0)
         .map(() => innerRandom())
         .map((seed: number, i): JSX.Element => {
