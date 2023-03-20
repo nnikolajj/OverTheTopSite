@@ -1,6 +1,9 @@
+/* https://codepen.io/DuskoStamenic/pen/ZEvBKdw */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+
 .App {
   text-align: center;
-  background-color: yellow;
 }
 
 .App-logo {
@@ -31,6 +34,10 @@
 
 .title {
 
+}
+
+h1{
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
