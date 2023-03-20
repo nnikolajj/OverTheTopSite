@@ -7,11 +7,15 @@ import banana from "./images/banana.svg";
 // @ts-ignore
 import bananaPeeler from "../src/images/BananaPeeler.jpeg";
 import { Bananas } from "./Bananas";
-import { Random, random } from "./random";
+import { random } from "./random";
+
+// Only seed it once at startup to ensure determinism
+const INITIAL_SEED = Math.random();
+
+console.log(INITIAL_SEED);
 
 function App() {
-  // Only seed it once at startup to ensure determinism
-  const [randomState, _] = useState<Random>(random);
+  const randomState = random(INITIAL_SEED);
 
   return (
     <Parallax
