@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 // @ts-ignore
@@ -7,8 +7,12 @@ import banana from "./images/banana.svg";
 // @ts-ignore
 import bananaPeeler from "../src/images/BananaPeeler.jpeg";
 import { Bananas } from "./Bananas";
+import { Random, random } from "./random";
 
 function App() {
+  // Only seed it once at startup to ensure determinism
+  const [randomState, _] = useState<Random>(random);
+
   return (
     <Parallax
       pages={4}
@@ -20,7 +24,7 @@ function App() {
         style={{ backgroundColor: "#ffffa1" }}
       >
         <h1 className="title">Banana Peeler</h1>
-        <Bananas />
+        <Bananas randomState={randomState} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0} factor={1}>
