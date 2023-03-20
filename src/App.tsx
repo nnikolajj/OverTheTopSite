@@ -38,7 +38,10 @@ function App() {
         <h2>Products</h2>
         <div>
           Large
-          <img src={bananaPeeler} alt="large industrial banana peeling machine" />
+          <img
+            src={bananaPeeler}
+            alt="large industrial banana peeling machine"
+          />
         </div>
       </div>
     </div>
