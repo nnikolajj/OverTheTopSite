@@ -44,7 +44,7 @@ function App() {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.2} speed={1} factor={1} style={{ marginTop: "-0.1%" }}>
+      <ParallaxLayer offset={1.2} speed={2} factor={1} style={{ marginTop: "-0.1%" }}>
         <p className={"features"}>
         <h2>Features</h2>
         <ul>
