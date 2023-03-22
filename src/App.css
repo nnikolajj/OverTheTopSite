@@ -31,59 +31,64 @@
   color: #61dafb;
 }
 
-h1 {
+.main-title {
   text-align: center;
 }
 
-h1 {
+.main-title {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  width: 160px;
+  width: 300px;
   text-align: center;
   margin: auto;
   white-space: nowrap;
   padding-bottom: 13px;
+
+  --angle: 0deg;
+
+  /* Create a dotted border */
+
+  /* Create two background layers:
+     1. A white semi-transparent
+     2. A layer with the colored boxes
+   */
+  background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 1),
+      rgb(255 255 255 / 1)
+    ),
+    conic-gradient(
+      from var(--angle),
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    );
+
+  background-origin: border-box;
+  background-clip: padding-box,
+    /* Clip white semi-transparent to the padding-box */ border-box
+      /* Clip colored boxes to the border-box (default) */;
+
+  border: 0.3rem dotted transparent;
+  animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
 }
 
-h1:before {
-  background-color: #c50000;
-  content: "";
-  display: block;
-  height: 3px;
-  width: 270px;
-  margin-bottom: 5px;
-
-  animation-duration: 5s;
-  animation-name: title-bar-sub-move;
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
-h1:after {
-  background-color: #c50000;
-  content: "";
-  display: block;
-  position: absolute;
-  right: 40%;
-  top: 6%;
-  height: 3px;
-  width: 270px;
-
-  animation-duration: 5s;
-  animation-name: title-bar-sub-move;
-}
-
-@keyframes title-bar-sub-move {
-  from {
-    width: 75px;
-  }
-
+@keyframes rotate {
   to {
-    width: 270px;
+    --angle: 360deg;
   }
 }
 
-.description{
+.description {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 30%;
@@ -94,7 +99,7 @@ h1:after {
   transform: translate(-50%);
 }
 
-.features{
+.features {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 30%;
@@ -103,13 +108,4 @@ h1:after {
   position: fixed;
   left: 70%;
   transform: translate(-50%, -20%);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
