@@ -23,19 +23,19 @@ function App() {
       style={{ top: "0", left: "0", backgroundColor: "#ffffa1" }}
     >
 
-      <ParallaxLayer offset={0.1} speed={-0.1} factor={3}>
+      <ParallaxLayer offset={0.1} speed={-1}>
         <Bananas randomState={randomState} />
       </ParallaxLayer>
 
       <ParallaxLayer
         offset={0.4}
-        speed={0}
+        speed={-0.3}
       >
         <h1 className="title">Banana Peeler</h1>
 
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={0.5} factor={0}>
+      <ParallaxLayer offset={1} speed={0.5}>
         <p className={"description"}>
           Our automatic diesel powered banana peelers are some of the best in
           the industry. Their raw power and throughput is still unmatched and
@@ -44,7 +44,7 @@ function App() {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.2} speed={2} factor={1} style={{ marginTop: "-0.1%" }}>
+      <ParallaxLayer offset={1.1} speed={1.5} factor={1} style={{ marginTop: "-0.1%" }}>
         <p className={"features"}>
         <h2>Features</h2>
         <ul>
@@ -56,7 +56,13 @@ function App() {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.5} speed={3} factor={1}>
+      <ParallaxLayer offset={1.5} speed={1}>
+        <p>
+        Comments
+        </p>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2} speed={3} factor={1}>
         <p>
           I bought the biggest model for our family, our children love bananas
           so much. My husband has already convinced me that we need a second
@@ -64,7 +70,7 @@ function App() {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.5} speed={1} factor={3}>
+      <ParallaxLayer offset={1.8} speed={1} factor={3}>
         <p>
           I wanted to overthrow the government and was buying some guns when I
           saw an ad for this machine. I couldn't resist and spent all my money
@@ -72,7 +78,7 @@ function App() {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.5} speed={2} factor={1}>
+      <ParallaxLayer offset={1.9} speed={2} factor={1}>
         <p>
           <h2>Products</h2>
           <div>

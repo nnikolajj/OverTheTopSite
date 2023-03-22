@@ -83,6 +83,28 @@ h1:after {
   }
 }
 
+.description{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 30%;
+  padding: 5%;
+  border-radius: 20px;
+  position: fixed;
+  left: 30%;
+  transform: translate(-50%);
+}
+
+.features{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 30%;
+  padding: 5%;
+  border-radius: 20px;
+  position: fixed;
+  left: 70%;
+  transform: translate(-50%, -20%);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
