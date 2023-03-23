@@ -8,6 +8,7 @@ import banana from "./images/banana.svg";
 import bananaPeeler from "../src/images/BananaPeeler.jpeg";
 import { Bananas } from "./Bananas";
 import { random } from "./random";
+import BananaParallax from "./BananaParallax";
 
 // Only seed it once at startup to ensure determinism
 const INITIAL_SEED = Math.random();
@@ -22,6 +23,8 @@ function App() {
       pages={4}
       style={{ top: "0", left: "0", backgroundColor: "#ffffa1" }}
     >
+
+      <BananaParallax></BananaParallax>
 
       <ParallaxLayer offset={0.1} speed={-1}>
         <Bananas randomState={randomState} />
