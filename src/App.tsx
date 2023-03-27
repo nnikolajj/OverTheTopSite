@@ -145,7 +145,7 @@ function App() {
               <p>Product images: StableDiffusion</p>
               <p>
                 CSS Border animation on the title:
-                https://web.dev/css-border-animations/{" "}
+                https://web.dev/css-border-animations/
               </p>
             </Col>
           </Row>
