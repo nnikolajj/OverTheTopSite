@@ -102,14 +102,21 @@ function App() {
           </p>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={1.4} factor={1}>
+        <ParallaxLayer offset={2} speed={2} factor={1}>
           <Row>
             <Col sm={2}></Col>
-            <Col>
+            <Col sm={8}>
+              <Peeler />
+              <Peeler />
+              <Peeler />
+              <Peeler />
+              <Peeler />
               <Peeler />
             </Col>
           </Row>
+        </ParallaxLayer>
 
+        <ParallaxLayer offset={2.4} speed={2} factor={1}>
           <Row>
             <Col sm={2}></Col>
             <Col>
