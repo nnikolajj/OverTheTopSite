@@ -30,3 +30,5 @@
 Rotating banana: Tweemoji (https://github.com/twitter/twemoji)
 Product images: StableDiffusion
 CSS Border animation on the title: https://web.dev/css-border-animations/
+Banana svg for Background and Peeler: https://fontawesomeicons.com/svg/icons/banana
+Parallax: https://www.react-spring.dev/docs/components/parallax
