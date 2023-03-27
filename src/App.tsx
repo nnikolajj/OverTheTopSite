@@ -28,7 +28,6 @@ function App() {
         style={{ top: "0", left: "0", backgroundColor: "#ffffa1" }}
       >
         <BananaParallax></BananaParallax>
-
         <ParallaxLayer offset={0.4} speed={0}>
           <Row>
             <Col sm={3}></Col>
@@ -37,7 +36,6 @@ function App() {
             </Col>
           </Row>
         </ParallaxLayer>
-
         <ParallaxLayer offset={0.6} speed={0}>
           <Row>
             <Col sm={4}></Col>
@@ -48,18 +46,15 @@ function App() {
             </Col>
           </Row>{" "}
         </ParallaxLayer>
-
         <ParallaxLayer offset={0.7} speed={0}>
           <Bananas randomState={randomState} />
         </ParallaxLayer>
-
         <ParallaxLayer offset={0.7} speed={-0.1} factor={3}>
           <Row>
             <Col sm={3}></Col>
             <Col sm={6}></Col>
           </Row>
         </ParallaxLayer>
-
         <ParallaxLayer offset={1} speed={0.5} factor={0}>
           <p className={"description"}>
             Our automatic diesel powered banana peelers are some of the best in
@@ -68,7 +63,6 @@ function App() {
             models for all sizes.
           </p>
         </ParallaxLayer>
-
         <ParallaxLayer
           offset={1.2}
           speed={2}
@@ -85,7 +79,6 @@ function App() {
             </ul>
           </div>
         </ParallaxLayer>
-
         <ParallaxLayer offset={1.5} speed={0.5} factor={0}>
           <p className={"description"}>
             I bought the biggest model for our family, our children love bananas
@@ -93,7 +86,6 @@ function App() {
             one!
           </p>
         </ParallaxLayer>
-
         <ParallaxLayer offset={1.8} speed={2} factor={3}>
           <p className={"features"}>
             I wanted to overthrow the government and was buying some guns when I
@@ -101,7 +93,6 @@ function App() {
             on it. I have eaten a lot of bananas since then.
           </p>
         </ParallaxLayer>
-
         <ParallaxLayer offset={2} speed={2} factor={1}>
           <Row>
             <Col sm={2}></Col>
@@ -115,7 +106,6 @@ function App() {
             </Col>
           </Row>
         </ParallaxLayer>
-
         <ParallaxLayer offset={2.4} speed={2} factor={1}>
           <Row>
             <Col sm={2}></Col>
@@ -140,6 +130,23 @@ function App() {
                 />
               </div>
               <h2>Tractor - $10,000</h2>
+            </Col>
+          </Row>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={3} speed={2} factor={1}>
+          <Row>
+            <Col sm={2}></Col>
+            <Col>
+              <h4>Sources</h4>
+              <p>
+                Rotating banana: Tweemoji (https://github.com/twitter/twemoji)
+              </p>
+              <p>Product images: StableDiffusion</p>
+              <p>
+                CSS Border animation on the title:
+                https://web.dev/css-border-animations/{" "}
+              </p>
             </Col>
           </Row>
         </ParallaxLayer>
