@@ -23,3 +23,10 @@
   - Was würden Sie nächstes Mal anders machen?
   - Was haben wir gelernt? Was war neu? Wie wurde die Arbeit im Team aufgeteilt?
   - Notenvorschlag?
+
+
+## Quellen
+
+Rotating banana: Tweemoji (https://github.com/twitter/twemoji)
+Product images: StableDiffusion
+CSS Border animation on the title: https://web.dev/css-border-animations/
