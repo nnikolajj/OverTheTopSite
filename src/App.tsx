@@ -10,6 +10,10 @@ import bananaPeelerTractor from "../src/images/TractorBananaPeeler.jpeg";
 import { Bananas } from "./Bananas";
 import { random } from "./random";
 import BananaParallax from "./BananaParallax";
+
+// @ts-ignore
+import svgBananaPeeler from "./images/bananPeeler/bananPeeler.svg"
+
 import { Container, Col, Row } from "react-bootstrap";
 
 // Only seed it once at startup to ensure determinism
@@ -48,11 +52,15 @@ function App() {
           </Row>{" "}
         </ParallaxLayer>
 
+        <ParallaxLayer offset={0.7} speed={0}>
+          <Bananas randomState={randomState} />
+        </ParallaxLayer>
+
+
         <ParallaxLayer offset={0.7} speed={-0.1} factor={3}>
           <Row>
             <Col sm={3}></Col>
             <Col sm={6}>
-              <Bananas randomState={randomState} />{" "}
             </Col>
           </Row>
         </ParallaxLayer>
@@ -105,8 +113,11 @@ function App() {
             <Col>
               <div>
                 <img
-                  src={bananaPeeler}
+                  src={svgBananaPeeler}
                   alt="large industrial banana peeling machine"
+                style={{  width: "700px",
+                  height: "712px"}}
+
                 />
               </div>
               <h2>Industrial - $100,000</h2>
