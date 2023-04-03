@@ -110,39 +110,66 @@
   transform: translate(-50%, -20%);
 }
 
-.card{
+.card {
   width: 30rem;
 }
 
 .animation {
-
   white-space: nowrap;
   padding-bottom: 13px;
 
   --angle: 0deg;
 
-
   background-image: linear-gradient(
-          to right,
-          rgb(255 255 255 / 1),
-          rgb(255 255 255 / 1)
-  ),
-  conic-gradient(
-          from var(--angle),
-          #d53e33 0deg 90deg,
-          #fbb300 90deg 180deg,
-          #377af5 180deg 270deg,
-          #399953 270deg 360deg
-  );
+      to right,
+      rgb(255 255 255 / 1),
+      rgb(255 255 255 / 1)
+    ),
+    conic-gradient(
+      from var(--angle),
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    );
 
   background-origin: border-box;
   background-clip: padding-box,
     /* Clip white semi-transparent to the padding-box */ border-box
-  /* Clip colored boxes to the border-box (default) */;
+      /* Clip colored boxes to the border-box (default) */;
 
   border: 0.3rem dotted transparent;
   animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
+}
 
+@keyframes footer-border {
+  0% {
+    outline-width: 20px;
+  }
+  10% {
+    outline-width: 5%;
+  }
+  25% {
+    outline-width: 13px;
+  }
+  30% {
+    outline-width: 25px;
+  }
+  50% {
+    outline-width: 17px;
+  }
+  57% {
+    outline-width: 3%;
+  }
+  70% {
+    outline-width: 19px;
+  }
+  80% {
+    outline-width: 10px;
+  }
+  100% {
+    outline-width: 20px;
+  }
 }
 
 .footer {
@@ -152,4 +179,10 @@
   background-color: #fbb300;
   padding-bottom: 10%;
   transform: translate(-0%, -50%);
+  outline-style: solid;
+  outline-color: #282c34;
+  outline-width: 20px;
+  animation-name: footer-border;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
