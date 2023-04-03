@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8af11946.css",
-    "main.js": "/static/js/main.b9c026d2.js",
-    "static/media/BananaPeeler.jpeg": "/static/media/BananaPeeler.1ac378f37509a29f8a7b.jpeg",
-    "static/media/TractorBananaPeeler.jpeg": "/static/media/TractorBananaPeeler.0a7781db8e38c3eeac21.jpeg",
-    "static/media/ownBanana.svg": "/static/media/ownBanana.6000901ab2c4463e9628e18c63673e7f.svg",
-    "static/media/banana.svg": "/static/media/banana.c583212cdf57ae1229f583c4121d6fb6.svg",
-    "static/media/bananaPeeled.svg": "/static/media/bananaPeeled.d985398d0fe0f1051bc192a50577aaa5.svg",
-    "index.html": "/index.html",
-    "main.8af11946.css.map": "/static/css/main.8af11946.css.map",
-    "main.b9c026d2.js.map": "/static/js/main.b9c026d2.js.map"
+    "main.css": "/banana-peeler/static/css/main.8af11946.css",
+    "main.js": "/banana-peeler/static/js/main.4d9d3e38.js",
+    "static/media/BananaPeeler.jpeg": "/banana-peeler/static/media/BananaPeeler.1ac378f37509a29f8a7b.jpeg",
+    "static/media/TractorBananaPeeler.jpeg": "/banana-peeler/static/media/TractorBananaPeeler.0a7781db8e38c3eeac21.jpeg",
+    "static/media/ownBanana.svg": "/banana-peeler/static/media/ownBanana.6000901ab2c4463e9628e18c63673e7f.svg",
+    "static/media/banana.svg": "/banana-peeler/static/media/banana.c583212cdf57ae1229f583c4121d6fb6.svg",
+    "static/media/bananaPeeled.svg": "/banana-peeler/static/media/bananaPeeled.d985398d0fe0f1051bc192a50577aaa5.svg",
+    "index.html": "/banana-peeler/index.html",
+    "main.8af11946.css.map": "/banana-peeler/static/css/main.8af11946.css.map",
+    "main.4d9d3e38.js.map": "/banana-peeler/static/js/main.4d9d3e38.js.map"
   },
   "entrypoints": [
     "static/css/main.8af11946.css",
-    "static/js/main.b9c026d2.js"
+    "static/js/main.4d9d3e38.js"
   ]
 }
