@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-// @ts-ignore
-import banana from "./images/banana.svg";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 // @ts-ignore
 import bananaPeeler from "../src/images/BananaPeeler.jpeg";
 // @ts-ignore
@@ -121,7 +119,7 @@ function App() {
                 <img
                   className="card-img-top"
                   src={bananaPeeler}
-                  alt="Card image cap"
+                  alt="Big industrial banana peeler machine"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Industrial Machine</h5>
@@ -139,7 +137,7 @@ function App() {
                 <img
                   className="card-img-top"
                   src={bananaPeelerTractor}
-                  alt="Card image cap"
+                  alt="Tractor-like banana peeler with many bananas"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Tractor</h5>

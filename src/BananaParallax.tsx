@@ -1,9 +1,6 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import "./App.css";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-
-// @ts-ignore
-import { random } from "./random";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 // @ts-ignore
 import banana from "../src/images/ownBanana.svg";
@@ -15,7 +12,7 @@ function BananaParallax() {
         {Array(50)
           .fill(0)
           .map((i): JSX.Element => {
-            return <img src={banana} style={{ margin: "4%" }} />;
+            return <img alt="banana" src={banana} style={{ margin: "4%" }} />;
           })}
       </ParallaxLayer>
 
@@ -23,7 +20,7 @@ function BananaParallax() {
         {Array(40)
           .fill(0)
           .map((i): JSX.Element => {
-            return <img src={banana} style={{ margin: "6%" }} />;
+            return <img alt="banana" src={banana} style={{ margin: "6%" }} />;
           })}
       </ParallaxLayer>
 
@@ -31,7 +28,7 @@ function BananaParallax() {
         {Array(25)
           .fill(0)
           .map((i): JSX.Element => {
-            return <img src={banana} style={{ margin: "8%" }} />;
+            return <img alt="banana" src={banana} style={{ margin: "8%" }} />;
           })}
       </ParallaxLayer>
     </div>
