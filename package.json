@@ -1,6 +1,7 @@
 {
   "name": "banana-peeler",
   "version": "0.1.0",
+  "homepage": "https://nnikolajj.github.io/banana-peeler",
   "private": true,
   "dependencies": {
     "@react-spring/parallax": "^9.7.1",
