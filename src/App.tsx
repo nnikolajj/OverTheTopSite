@@ -24,7 +24,7 @@ function App() {
     return (
         <Container>
             <Parallax
-                pages={4}
+                pages={3.2}
                 style={{top: "0", left: "0", backgroundColor: "#ffffa1"}}
             >
                 <BananaParallax></BananaParallax>
@@ -61,7 +61,7 @@ function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={1} speed={0.5} factor={0}>
-                    <p className={"description"}>
+                    <p className={"leftSide"}>
                         Our automatic diesel powered banana peelers are some of the best in
                         the industry. Their raw power and throughput is still unmatched and
                         even their precision is known for the pinpoint accuracy. We have
@@ -70,12 +70,12 @@ function App() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1.2}
-                    speed={2}
+                    offset={1.5}
+                    speed={0.5}
                     factor={1}
                     style={{marginTop: "-0.1%"}}
                 >
-                    <div className={"features"}>
+                    <div className={"leftSide"}>
                         <h2>Features</h2>
                         <ul>
                             <li>&gt;1000 bananas/m on the biggest models</li>
@@ -86,68 +86,78 @@ function App() {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1.5} speed={0.5} factor={0}>
-                    <p className={"description"}>
-                        I bought the biggest model for our family, our children love bananas
-                        so much. My husband has already convinced me that we need a second
-                        one!
-                    </p>
+                <ParallaxLayer offset={1.2} speed={2} factor={0}>
+
+                    <fieldset className={"fieldset"}>
+                        <legend>Comments</legend>
+
+                        <p className={"rightSide"}>
+                            I bought the biggest model for our family, our children love bananas
+                            so much. My husband has already convinced me that we need a second
+                            one!
+
+                            <br/>
+
+                            -----------------------
+
+                            <br/>
+
+                            I wanted to overthrow the government and was buying some guns when I
+                            saw an ad for this machine. I couldn't resist and spent all my money
+                            on it. I have eaten a lot of bananas since then.
+                        </p>
+                    </fieldset>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1.8} speed={2} factor={3}>
-                    <p className={"features"}>
-                        I wanted to overthrow the government and was buying some guns when I
-                        saw an ad for this machine. I couldn't resist and spent all my money
-                        on it. I have eaten a lot of bananas since then.
-                    </p>
+                <ParallaxLayer offset={2} speed={1.4} factor={1} >
+                    <Row>
+                        <Col sm={1}></Col>
+                        <Col>
+                            <div className={"card"}>
+                                <img className="card-img-top" src={bananaPeeler} alt="Card image cap"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Industrial Machine</h5>
+                                    <p className="card-text">Industrial Banana Peeler (3'000 Bananas/min).</p>
+                                    <br/> <p> Price:</p>
+                                    <p className="card-text">$100,000</p>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col>
+                            <div className="card">
+                                <img className="card-img-top" src={bananaPeelerTractor} alt="Card image cap"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Tractor</h5>
+                                    <p className="card-text">A portable Banana Peeler Machine as a tractor.</p>
+                                    <br/> <p> Price:</p>
+                                    <p className="card-text">$10,000</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
                 </ParallaxLayer>
+                <ParallaxLayer offset={2.9} speed={2} factor={1}>
 
-                    <ParallaxLayer offset={2.5} speed={1.4} factor={1}>
-                        <Row>
-                            <Col sm={1}></Col>
-                            <Col>
-                                <div className="card" style={{width: "30rem"}}>
-                                    <img className="card-img-top" src={bananaPeeler} alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Industrial Machine</h5>
-                                        <p className="card-text">Industrial Banana Peeler (3'000 Bananas/min).</p>
-                                        <br/> <p> Price:</p>
-                                        <p className="card-text">$100,000</p>
-                                    </div>
-                                </div>
-                            </Col>
+                </ParallaxLayer>
+                <ParallaxLayer offset={2.9} speed={1}>
+                <div className={"footer"}>
+                <Row>
+                    <Col sm={2}></Col>
+                    <Col>
+                        <h4>Sources</h4>
+                        <a href={"https://github.com/twitter/twemoji"}>Rotating banana: Tweemoji</a>
+                        <p>Product images: StableDiffusion</p>
+                        <a href={"https://web.dev/css-border-animations/"}>CSS Border animation on the title</a>
 
-                            <Col>
-                                <div className="card" style={{width: "30rem"}}>
-                                    <img className="card-img-top" src={bananaPeelerTractor} alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Tractor</h5>
-                                        <p className="card-text">A portable Banana Peeler Machine as a tractor.</p>
-                                        <br/> <p> FOR ONLY:</p>
-                                        <p className="card-text">$10,000</p>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </ParallaxLayer>
-      <ParallaxLayer offset={3} speed={2} factor={1}>
-          <Row>
-            <Col sm={2}></Col>
-            <Col>
-              <h4>Sources</h4>
-              <p>
-                Rotating banana: Tweemoji (https://github.com/twitter/twemoji)
-              </p>
-              <p>Product images: StableDiffusion</p>
-              <p>
-                CSS Border animation on the title:
-                https://web.dev/css-border-animations/
-              </p>
-            </Col>
-          </Row>
-        </ParallaxLayer>      </Parallax>
+
+                    </Col>
+                </Row></div>
+                </ParallaxLayer>
+            </Parallax>
+
         </Container>
-);
+    );
 }
 
 export default App;
