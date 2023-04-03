@@ -40,9 +40,9 @@ function App() {
           <Row>
             <Col sm={4}></Col>
             <Col sm={5}>
-              <div>
+              <h2 className="sub-title">
                 The fastest and most powerful banana peeler in the world.
-              </div>
+              </h2>
             </Col>
           </Row>
         </ParallaxLayer>
