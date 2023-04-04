@@ -6,7 +6,7 @@ import svgBananaPeeled from "./images/bananPeeler/bananaPeeled.svg";
 
 function Peeler() {
   return (
-    <svg width="300" height="140" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="20 0 250 300" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(-45, -155)">
         <image href={svgBanana} x="20" y="225" width="50" height="50">
           <animate />
