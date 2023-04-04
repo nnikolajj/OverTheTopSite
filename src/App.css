@@ -88,6 +88,12 @@
   }
 }
 
+.sub-title {
+  background-color: #282c34;
+  color: white;
+  width: 450px;
+}
+
 .leftSide {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
