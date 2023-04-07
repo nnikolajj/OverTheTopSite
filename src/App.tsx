@@ -229,7 +229,10 @@ function App() {
                             <Col sm={2}></Col>
                             <Col>
                                 <br/>
-                                <h4>Sources</h4>
+                                <h4>Sources:</h4>
+                            </Col>
+                            <Col>
+                                <br/>
                                 <a href={"https://github.com/twitter/twemoji"}>
                                     Rotating banana: Tweemoji
                                 </a>
@@ -237,7 +240,16 @@ function App() {
                                 <a href={"https://web.dev/css-border-animations/"}>
                                     CSS Border animation on the title
                                 </a>
+                                <br/>
+                                <a href={"https://www.react-spring.dev/docs/components/parallax"}>
+                                    Parallax
+                                </a>
+                                <br/>
+                                <a href={"https://fontawesomeicons.com/svg/icons/banana"}>
+                                    Banana svg for Background and Peeler
+                                </a>
                             </Col>
+                            <Col sm={2}></Col>
                         </Row>
                     </div>
                 </ParallaxLayer>
