@@ -27,15 +27,6 @@ function App() {
             >
                 <BananaParallax></BananaParallax>
 
-                <ParallaxLayer offset={0.4} speed={0}>
-                    <Row>
-                        <Col sm={3}></Col>
-                        <Col sm={6}>
-                            <h1 className="main-title">Banana Peeler</h1>
-                        </Col>
-                    </Row>
-                </ParallaxLayer>
-
                 <ParallaxLayer offset={0.6} speed={0}>
                     <Row>
                         <Col sm={4}></Col>
@@ -47,8 +38,14 @@ function App() {
                     </Row>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0.7} speed={0}>
-                    <Bananas randomState={randomState}/>
+                <ParallaxLayer offset={0.4} speed={0}>
+                    <Row>
+                        <Col sm={3}></Col>
+                        <Col sm={6}>
+                            <h1 className="main-title">Banana Peeler</h1>
+                            <Bananas randomState={randomState}/>
+                        </Col>
+                    </Row>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={0.7} speed={-0.1} factor={3}>
