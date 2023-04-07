@@ -89,9 +89,23 @@
 }
 
 .sub-title {
-  background-color: #282c34;
   color: white;
   width: 450px;
+  backdrop-filter: invert(30%);
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.selfcard:hover {
+ cursor: pointer;
+}
+
+@keyframes example {
+
 }
 
 .leftSide {
