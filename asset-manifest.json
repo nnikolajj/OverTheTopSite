@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/banana-peeler/static/css/main.0870376a.css",
-    "main.js": "/banana-peeler/static/js/main.5040980d.js",
+    "main.js": "/banana-peeler/static/js/main.ad3120a8.js",
     "static/media/BananaPeeler.jpeg": "/banana-peeler/static/media/BananaPeeler.1ac378f37509a29f8a7b.jpeg",
     "static/media/TractorBananaPeeler.jpeg": "/banana-peeler/static/media/TractorBananaPeeler.0a7781db8e38c3eeac21.jpeg",
     "static/media/ownBanana.svg": "/banana-peeler/static/media/ownBanana.6000901ab2c4463e9628e18c63673e7f.svg",
@@ -9,10 +9,10 @@
     "static/media/bananaPeeled.svg": "/banana-peeler/static/media/bananaPeeled.d985398d0fe0f1051bc192a50577aaa5.svg",
     "index.html": "/banana-peeler/index.html",
     "main.0870376a.css.map": "/banana-peeler/static/css/main.0870376a.css.map",
-    "main.5040980d.js.map": "/banana-peeler/static/js/main.5040980d.js.map"
+    "main.ad3120a8.js.map": "/banana-peeler/static/js/main.ad3120a8.js.map"
   },
   "entrypoints": [
     "static/css/main.0870376a.css",
-    "static/js/main.5040980d.js"
+    "static/js/main.ad3120a8.js"
   ]
 }
